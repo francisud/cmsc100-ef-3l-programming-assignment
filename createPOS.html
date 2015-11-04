@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Galadhrim</title>
+		<meta charset="utf-8" />
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+
+	</head>
+
+	<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li class=""><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+				<li class="active"><a href="createPOS.html">Create Plan Of Study<span class="sr-only">(current)</span></a></li>
+				<li class=""><a href="checkPOS.html">Check Plan Of Study<span class="sr-only">(current)</span></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log Out<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="html/sign_in.html">Log Out</a></li>
+					<li><a href="#">Settings</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Concerns</a></li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div>
+		<div class="panel panel-primary">
+
+		  <div class="panel-heading"><h4>List of Subjects</h4>
+		  <p>MAX NUMBER OF ALLOWED MST SUBJECTS: </p>
+ 		  <p>MAX NUMBER OF ALLOWED SSP SUBJECTS: </p>
+  		  <p>MAX NUMBER OF ALLOWED AH SUBJECTS: </p>
+		 </div>
+
+		  <table class="table MST">
+		  <div class="panel-heading MST">
+			  MST (CURRENT NUMBER OF MST SUBJECTS: )
+		  </div>
+		  	<tr>
+		  		<td><strong>COURSE TITLE</strong></td>
+		  		<td><strong>COURSE DESCRIPTION</strong></td>
+				<td><strong>NUMBER OF UNITS</strong></td>
+		  	</tr>
+		  </table>
+
+		  <table class="table SSP">
+		  <div class="panel-heading SSP">
+		  <span>SSP</span>
+		  <span>(CURRENT NUMBER OF SSP SUBJECTS: )</span>
+		  </div>
+			<tr>
+				<td><strong>COURSE TITLE</strong></td>
+		  		<td><strong>COURSE DESCRIPTION</strong></td>
+				<td><strong>NUMBER OF UNITS</strong></td>
+			</tr>
+
+		  </table>
+
+		  <table class="table AH">
+		  <div class="panel-heading AH">
+		  <span>AH</span>
+		  <span>(CURRENT NUMBER OF AH SUBJECTS: )</span>
+		  </div>
+			<tr>
+				<td><strong>COURSE TITLE</strong></td>
+		  		<td><strong>COURSE DESCRIPTION</strong></td>
+				<td><strong>NUMBER OF UNITS</strong></td>
+			</tr>
+		  </table>
+		</div>
+
+	</div>
+
+	</body>
+
+	<script src="createPOS.js"></script>
+
+	<script>
+		function add(subject){
+
+			var listholder = getCookie("subjects");		//calls getCookie function, to find the list of indexes
+			var subjects;
+
+			if(listholder == null)		//if list of indexes is empty, creates an empty list
+			{
+				subjects = []; //get from document.cookie, if null set to []
+			}
+
+			else			//else if there is already a list of indexes, parses to JSON, for easier access / append
+			{
+				subjects = JSON.parse(listholder);
+			}
+
+			for(j=0; j<subjects.length; j++)				//for checking if there are duplicates
+			{
+				if(subjects[j].courseTitle == subject.courseTitle)	//if finds a duplicate, returns
+				{
+					alert("Subject already in the list.");
+					return
+				}
+			}
+
+			subjects.push(subject);					//push to the list the new index
+			document.cookie= "subjects="+JSON.stringify(subjects);	//parses to string, only strings can be stored in cookies
+			updateHeading(subject);
+		}
+
+
+		function getCookie(cookieName){
+
+			var cookieArray = document.cookie.split(';');		//splits the string of cookies
+
+			for(j=0; j<cookieArray.length; j++) 				//for checking all split string of cookies
+			{
+				var pairkey = cookieArray[j].split('=');		//splits each cookie to key and value
+
+				if(pairkey[0] == cookieName){					//checks if key is equal to cookieName
+					return pairkey[1];								//returns the list of indexes
+				}
+			}
+			return null;													//if not found
+		}
+
+
+		function updateHeading(subject){
+
+			var listholder = getCookie("subjects");		//calls getCookie function, to find the list of indexes
+			var subjects;
+
+			subjects = JSON.parse(listholder);
+
+			var subjClassification = subject.courseClassification;
+			var updateHeading = $(".panel-heading." + subjClassification);
+
+			var counter = 0;
+
+
+			for(i = 0; i < subjects.length; i++){
+				if(subjects[i].courseClassification == subject.courseClassification){
+					counter++;
+				}
+			}
+
+			if(subject.courseClassification == "MST"){
+				updateHeading.text("MST (CURRENT NUMBER OF MST SUBJECTS: " + counter + ")");
+			}
+
+			else if(subject.courseClassification == "SSP"){
+				updateHeading.text("MST (CURRENT NUMBER OF SSP SUBJECTS: " + counter + ")");
+			}
+
+			else if(subject.courseClassification == "AH"){
+				updateHeading.text("MST (CURRENT NUMBER OF AH SUBJECTS: " + counter + ")");
+			}
+
+		}
+
+	</script>
+
+
+</html>

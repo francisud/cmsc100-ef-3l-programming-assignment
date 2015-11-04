@@ -1,0 +1,249 @@
+[    
+    {
+    	"courseClassification" : "AH",
+        "courseTitle": "HUM 2",
+        "courseDescription": "ART. MAN AND SOCIETY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "AH",
+        "courseTitle": "ENG 1",
+        "courseDescription": "COLLEGE ENGLISH",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "AH",
+        "courseTitle": "ENG 2",
+        "courseDescription": "COLLEGE WRITING IN ENGLISH",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "AH",
+        "courseTitle": "SPCM 1",
+        "courseDescription": "SPEECH COMMUNICATION",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "AH",
+        "courseTitle": "HUM 1",
+        "courseDescription": "LITERATURE, MAN AND SOCIETY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "AH",
+        "courseTitle": "HUM 3",
+        "courseDescription": "READING FILM, TV AND THE INTERNET",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "PHLO 1",
+        "courseDescription": "PHILOSOPHICAL ANALYSIS",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "SOSC 1",
+        "courseDescription": "FOUNDATIONS OF BEHAVIORAL SCIENCES",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "SOSC 2",
+        "courseDescription": "SOCIAL, ECONOMIC AND POLITICAL THOUGHT",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "SOSC 3",
+        "courseDescription": "EXPLORING GENDER AND SEXUALITY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "SOSC 4",
+        "courseDescription": "SEEING SOCIETY IN THE LIVES OF CONTEMPORARY FILIPINOS",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "HIST 1",
+        "courseDescription": "PHILIPPINE HISTORY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "HIST 2",
+        "courseDescription": "ASIA AND THE WORLD",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "PSY 1",
+        "courseDescription": "EXPLORING THE SELF: THOUGHTS FEELINGS, AND ACTIONS",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "ECON 10",
+        "courseDescription": "ECONOMICS IN SOCIAL ISSUES",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "POSC 1",
+        "courseDescription": "REIMAGINING PHILIPPINES POLITICS",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "STS 1",
+        "courseDescription": "SCIENCE, TECHNOLOGY AND SOCIETY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "HUME 10",
+        "courseDescription": "SEXUALITY IN ADOLESCENCE",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "ENTR 1",
+        "courseDescription": "UNLEASHING THE  ENTREPRENEURIAL SPIRIT IN YOU",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "SSP",
+        "courseTitle": "PI 10",
+        "courseDescription": "THE LIFE AND WORKS OF JOZE RIZAL",
+        "courseUnits": 3
+    },
+	
+	
+	 {
+    	"courseClassification" : "MST",
+        "courseTitle": "IT 1",
+        "courseDescription": "INFORMATION TECHNOLOGY LITERACY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "MATH 1",
+        "courseDescription": "QUANTITATIVE REASONING ",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "MATH 2",
+        "courseDescription": "PROBLEM SOLVING",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 1",
+        "courseDescription": "THE MATERIAL UNIVERSE ",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 2",
+        "courseDescription": "THE LIVING PLANET",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 3",
+        "courseDescription": "PHYSICS IN EVERYDAY LIFE",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 4",
+        "courseDescription": "THE WORLD OF LIFE",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 5",
+        "courseDescription": "ENVIRONMENTAL BIOLOGY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 6",
+        "courseDescription": "FOOD AND NUTRITION FOR A HEALTHY LIFE",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 7",
+        "courseDescription": "ANIMALS IN HUMAN SOCIETY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 8",
+        "courseDescription": "PRACTICAL BOTANY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 9",
+        "courseDescription": "LIVING WITH MICROBES",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "NASC 10",
+        "courseDescription": "FORESTS AS SOURCE OF LIFE",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "STS 1",
+        "courseDescription": "SCIENCE,  TECHNOLOGY AND SOCIETY",
+        "courseUnits": 3
+    },
+	
+	{
+    	"courseClassification" : "MST",
+        "courseTitle": "STS 10",
+        "courseDescription": "EXPLORING BIOTECHNOLOGY",
+        "courseUnits": 3
+    }
+    
+    
+]
